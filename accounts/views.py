@@ -45,7 +45,7 @@ class UserLoginView(APIView):
                 status=status.HTTP_404_NOT_FOUND)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
     
-class UserProfileView(APIView):
+class UserProfileView(APIView): 
     renderer_classes = [UserRenderer]
     permission_classes = [IsAuthenticated]
     def get(self, request, format=None):

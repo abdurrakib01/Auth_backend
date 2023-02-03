@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-m!ozgj5m_+otd24v6hyt-46&f6yr2tm+xmfvf5lok#o&z5yjwg
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -60,6 +60,7 @@ MIDDLEWARE = [
 
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:3000',
+    'https://auth-frontend-psi.vercel.app'
 ]
 ROOT_URLCONF = 'backend.urls'
 
